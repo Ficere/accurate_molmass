@@ -13,7 +13,7 @@ keywords = [
   "Chemical",
   "Molecular Mass",
 ]
-license = {file = "license/copyright"}
+license = {text = "BSD 3-Clause License"}
 maintainers = [
   {name = "Lvjun Guo", email = "guolj@dp.tech"},
 ]
@@ -29,6 +29,7 @@ dynamic = [
   "version",
 ]
 dependencies = [
+    "pandas",
     "setuptools_scm",
 ]
 
