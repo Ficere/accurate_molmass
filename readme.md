@@ -14,7 +14,7 @@ pip install git+https://github.com/Ficere/accurate_molmass.git
 
 You can refer to the original [cgohlke/molmass](https://github.com/cgohlke/molmass).
 
-The main modification is the EnhancedFormula class, which uses decimal.Decimal improve the floating point precision.
+The main modification is the EnhancedFormula class, which uses decimal.Decimal to improve the accuracy of the calculation.
 
 It is more accurate but slower than the original formula.
 
