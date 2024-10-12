@@ -24,12 +24,13 @@ See the example below:
 from accurate_molmass import EnhancedFormula
 
 f = EnhancedFormula("C6H12O6")
-print(f.mass)
-print(f.isotope.mass)
+print(f.mass) # natural mass considering isotopes
+print(f.isotope.mass) # Mass of isotope composed of most abundant elemental isotopes. same as f.monoisotopic_mass
 
 adduct = EnhancedFormula("H-")
 f_adduct = f + adduct
 print(f_adduct.mass)
+print(f.mz) # mass/charge ratio
 print(f_adduct.isotope.mass)
 
 adduct = EnhancedFormula("Na+")
