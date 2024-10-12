@@ -30,11 +30,12 @@ print(f.isotope.mass) # Mass of isotope composed of most abundant elemental isot
 adduct = EnhancedFormula("H-")
 f_adduct = f + adduct
 print(f_adduct.mass)
-print(f.mz) # mass/charge ratio
+print(f_adduct.mz) # mass/charge ratio
 print(f_adduct.isotope.mass)
 
 adduct = EnhancedFormula("Na+")
 f_adduct = f + adduct
 print(f_adduct.mass)
+print(f_adduct.mz) # mass/charge ratio
 print(f_adduct.isotope.mass)
 ```
